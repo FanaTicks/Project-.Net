@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             sqlConnection.Open();
             if (sqlConnection.State == ConnectionState.Open)
             {
-                MessageBox.Show("Підключення до БД встановлено!");
+                //MessageBox.Show("Підключення до БД встановлено!");
             }
             dBHandler = new DBHandler(sqlConnection);
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {            
-            //this.customerTableAdapter.Fill(this.ZalDataSet.Customer);**************        
+            this.customerTableAdapter.Fill(this.ZalDataSet.Customer);     
         }
         
         //додати нового користувача-----

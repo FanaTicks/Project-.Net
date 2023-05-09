@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
             sqlConnection.Open();
             if (sqlConnection.State == ConnectionState.Open)
             {
-               MessageBox.Show("Підключення до БД встановлено!");
+               //MessageBox.Show("Підключення до БД встановлено!");
             }
             dBHandler = new DBHandler(sqlConnection);
             InitializeComponent();
