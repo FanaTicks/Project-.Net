@@ -227,5 +227,15 @@ namespace WindowsFormsApp1
         {
             Close();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxPriceIn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

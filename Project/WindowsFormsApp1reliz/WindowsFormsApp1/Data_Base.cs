@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
 {
     internal class Data_Base
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-G082NTP\MSSQLSERVER02; Initial Catalog=Groop_Project_; integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-2L42MJ1\SQLEXPRESS; Initial Catalog=Groop_Project_; integrated Security=True");
 
         public void openConnection()
         {

@@ -43,17 +43,24 @@
             this.abonementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.abonementTableAdapter = new WindowsFormsApp1.AbonementTableAdapters.AbonementTableAdapter();
             this.ticketTableAdapter = new WindowsFormsApp1.TicketTableAdapters.TicketTableAdapter();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonementBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(282, 269);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(488, 438);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 23);
+            this.button1.Size = new System.Drawing.Size(190, 34);
             this.button1.TabIndex = 15;
             this.button1.Text = "Сплачено";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,9 +68,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(481, 269);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(703, 438);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(186, 34);
             this.button2.TabIndex = 16;
             this.button2.Text = "Вихід";
             this.button2.UseVisualStyleBackColor = true;
@@ -71,19 +79,23 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.textBox1.Location = new System.Drawing.Point(50, 108);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(242, 223);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(186, 15);
             this.textBox1.TabIndex = 17;
             this.textBox1.Text = "Сплачено";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(472, 57);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(512, 292);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.Size = new System.Drawing.Size(150, 25);
             this.label1.TabIndex = 22;
             this.label1.Text = "Ціна до сплати";
             // 
@@ -91,12 +103,14 @@
             // 
             this.comboBox4.DataSource = this.ticketBindingSource;
             this.comboBox4.DisplayMember = "Ticket_price";
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(602, 54);
+            this.comboBox4.Location = new System.Drawing.Point(703, 289);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.Size = new System.Drawing.Size(204, 33);
             this.comboBox4.TabIndex = 21;
             this.comboBox4.ValueMember = "Ticket_price";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // ticketBindingSource
             // 
@@ -112,10 +126,11 @@
             // 
             this.comboBox3.DataSource = this.ticketBindingSource;
             this.comboBox3.DisplayMember = "Ticket_end_date";
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(304, 54);
+            this.comboBox3.Location = new System.Drawing.Point(703, 161);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.Size = new System.Drawing.Size(204, 33);
             this.comboBox3.TabIndex = 20;
             this.comboBox3.ValueMember = "Ticket_end_date";
             // 
@@ -123,10 +138,11 @@
             // 
             this.comboBox2.DataSource = this.ticketBindingSource;
             this.comboBox2.DisplayMember = "Ticket_start_date";
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(177, 54);
+            this.comboBox2.Location = new System.Drawing.Point(472, 161);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(206, 33);
             this.comboBox2.TabIndex = 19;
             this.comboBox2.ValueMember = "Ticket_end_date";
             // 
@@ -134,10 +150,11 @@
             // 
             this.comboBox1.DataSource = this.ticketBindingSource;
             this.comboBox1.DisplayMember = "ID_Ticket";
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(50, 54);
+            this.comboBox1.Location = new System.Drawing.Point(225, 161);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(220, 33);
             this.comboBox1.TabIndex = 18;
             this.comboBox1.ValueMember = "ID_Ticket";
             // 
@@ -159,11 +176,41 @@
             // 
             this.ticketTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.Location = new System.Drawing.Point(176, 117);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(795, 414);
+            this.pictureBox8.TabIndex = 101;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox7.Location = new System.Drawing.Point(-142, -82);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(1303, 762);
+            this.pictureBox7.TabIndex = 100;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.QrQuteee;
+            this.pictureBox9.Location = new System.Drawing.Point(225, 223);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(220, 223);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 102;
+            this.pictureBox9.TabStop = false;
+            // 
             // Privat24
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1156, 673);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
@@ -172,6 +219,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox7);
             this.Name = "Privat24";
             this.Text = "Privat24";
             this.Load += new System.EventHandler(this.Privat24_Load);
@@ -179,6 +228,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ticket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonementBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +251,8 @@
         private Ticket ticket;
         private System.Windows.Forms.BindingSource ticketBindingSource;
         private TicketTableAdapters.TicketTableAdapter ticketTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

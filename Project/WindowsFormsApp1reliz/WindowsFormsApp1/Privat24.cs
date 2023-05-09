@@ -76,5 +76,10 @@ namespace WindowsFormsApp1
             
             Close();
         }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

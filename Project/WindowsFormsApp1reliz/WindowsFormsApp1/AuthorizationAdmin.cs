@@ -75,5 +75,10 @@ namespace Groop_Project_Proto
             frm__.ShowDialog();
             Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

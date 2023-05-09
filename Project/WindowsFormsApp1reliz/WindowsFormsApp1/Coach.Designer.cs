@@ -30,6 +30,9 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Coach));
             this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.zalDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -45,6 +48,7 @@ namespace WindowsFormsApp1
             this.iDTicketBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productTableAdapter2 = new WindowsFormsApp1.ZalDataSetTableAdapters.ProductTableAdapter();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.productDataGridView2 = new System.Windows.Forms.DataGridView();
             this.iDCoachDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +63,13 @@ namespace WindowsFormsApp1
             this.label13 = new System.Windows.Forms.Label();
             this.delButton = new System.Windows.Forms.Button();
             this.comboBoxCDell = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.comboBoxNameSPUp = new System.Windows.Forms.ComboBox();
+            this.specialityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxIDSPUp = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBoxCUp = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -86,9 +96,10 @@ namespace WindowsFormsApp1
             this.coachPasswordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.refreshUpdateData = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.specialityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -117,12 +128,10 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.insertButton = new System.Windows.Forms.Button();
             this.comboBoxIDSpec = new System.Windows.Forms.ComboBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.coachBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.iDSpecialityBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBoxNameSPUp = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBoxIDSPUp = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zalDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZalDataSet)).BeginInit();
@@ -133,12 +142,18 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.iDCoachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iDTicketBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productDataGridView1)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.specialityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource1)).BeginInit();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iDSpecialityBindingSource)).BeginInit();
@@ -208,25 +223,39 @@ namespace WindowsFormsApp1
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.pictureBox6);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.productDataGridView2);
             this.tabPage3.Controls.Add(this.refreshDelData);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.delButton);
             this.tabPage3.Controls.Add(this.comboBoxCDell);
+            this.tabPage3.Controls.Add(this.pictureBox2);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1085, 528);
+            this.tabPage3.Size = new System.Drawing.Size(1135, 582);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "DELETE";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.delete;
+            this.pictureBox6.Location = new System.Drawing.Point(1062, 21);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 56;
+            this.pictureBox6.TabStop = false;
+            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(713, 340);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(795, 424);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(155, 33);
             this.button3.TabIndex = 49;
             this.button3.Text = "Вихід";
             this.button3.UseVisualStyleBackColor = true;
@@ -235,6 +264,15 @@ namespace WindowsFormsApp1
             // productDataGridView2
             // 
             this.productDataGridView2.AutoGenerateColumns = false;
+            this.productDataGridView2.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.productDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCoachDataGridViewTextBoxColumn2,
@@ -246,12 +284,13 @@ namespace WindowsFormsApp1
             this.coachLoginDataGridViewTextBoxColumn2,
             this.coachPasswordDataGridViewTextBoxColumn2});
             this.productDataGridView2.DataSource = this.coachBindingSource;
+            this.productDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
             this.productDataGridView2.Location = new System.Drawing.Point(-5, 0);
             this.productDataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView2.Name = "productDataGridView2";
             this.productDataGridView2.ReadOnly = true;
             this.productDataGridView2.RowHeadersWidth = 51;
-            this.productDataGridView2.Size = new System.Drawing.Size(1061, 314);
+            this.productDataGridView2.Size = new System.Drawing.Size(1140, 314);
             this.productDataGridView2.TabIndex = 32;
             // 
             // iDCoachDataGridViewTextBoxColumn2
@@ -275,7 +314,7 @@ namespace WindowsFormsApp1
             // coachNameDataGridViewTextBoxColumn2
             // 
             this.coachNameDataGridViewTextBoxColumn2.DataPropertyName = "Coach_Name";
-            this.coachNameDataGridViewTextBoxColumn2.HeaderText = "Ім*я";
+            this.coachNameDataGridViewTextBoxColumn2.HeaderText = "Ім\'я";
             this.coachNameDataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.coachNameDataGridViewTextBoxColumn2.Name = "coachNameDataGridViewTextBoxColumn2";
             this.coachNameDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -302,7 +341,7 @@ namespace WindowsFormsApp1
             // coachPostadressDataGridViewTextBoxColumn2
             // 
             this.coachPostadressDataGridViewTextBoxColumn2.DataPropertyName = "Coach_Post_adress";
-            this.coachPostadressDataGridViewTextBoxColumn2.HeaderText = "Елктронна пошта";
+            this.coachPostadressDataGridViewTextBoxColumn2.HeaderText = "Електронна пошта";
             this.coachPostadressDataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.coachPostadressDataGridViewTextBoxColumn2.Name = "coachPostadressDataGridViewTextBoxColumn2";
             this.coachPostadressDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -328,10 +367,11 @@ namespace WindowsFormsApp1
             // 
             // refreshDelData
             // 
-            this.refreshDelData.Location = new System.Drawing.Point(583, 340);
+            this.refreshDelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshDelData.Location = new System.Drawing.Point(610, 424);
             this.refreshDelData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshDelData.Name = "refreshDelData";
-            this.refreshDelData.Size = new System.Drawing.Size(100, 28);
+            this.refreshDelData.Size = new System.Drawing.Size(158, 33);
             this.refreshDelData.TabIndex = 32;
             this.refreshDelData.Text = "Оновити";
             this.refreshDelData.UseVisualStyleBackColor = true;
@@ -340,19 +380,21 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(348, 318);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(221, 374);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 16);
+            this.label13.Size = new System.Drawing.Size(129, 25);
             this.label13.TabIndex = 31;
-            this.label13.Text = "ІД тренера";
+            this.label13.Text = "Код тренера";
             // 
             // delButton
             // 
-            this.delButton.Location = new System.Drawing.Point(475, 340);
+            this.delButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delButton.Location = new System.Drawing.Point(430, 424);
             this.delButton.Margin = new System.Windows.Forms.Padding(4);
             this.delButton.Name = "delButton";
-            this.delButton.Size = new System.Drawing.Size(100, 28);
+            this.delButton.Size = new System.Drawing.Size(149, 33);
             this.delButton.TabIndex = 30;
             this.delButton.Text = "Видалити";
             this.delButton.UseVisualStyleBackColor = true;
@@ -362,17 +404,28 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxCDell.DataSource = this.coachBindingSource;
             this.comboBoxCDell.DisplayMember = "ID_Coach";
+            this.comboBoxCDell.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCDell.FormattingEnabled = true;
-            this.comboBoxCDell.Location = new System.Drawing.Point(321, 340);
+            this.comboBoxCDell.Location = new System.Drawing.Point(182, 424);
             this.comboBoxCDell.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCDell.Name = "comboBoxCDell";
-            this.comboBoxCDell.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxCDell.Size = new System.Drawing.Size(215, 33);
             this.comboBoxCDell.TabIndex = 29;
             this.comboBoxCDell.ValueMember = "ID_Coach";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1135, 575);
+            this.pictureBox2.TabIndex = 55;
+            this.pictureBox2.TabStop = false;
             // 
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.pictureBox5);
             this.tabPage2.Controls.Add(this.comboBoxNameSPUp);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.comboBoxIDSPUp);
@@ -394,20 +447,75 @@ namespace WindowsFormsApp1
             this.tabPage2.Controls.Add(this.productDataGridView1);
             this.tabPage2.Controls.Add(this.refreshUpdateData);
             this.tabPage2.Controls.Add(this.updateButton);
+            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1085, 528);
+            this.tabPage2.Size = new System.Drawing.Size(1135, 582);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "UPDATE";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.update;
+            this.pictureBox5.Location = new System.Drawing.Point(1072, 16);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 55;
+            this.pictureBox5.TabStop = false;
+            // 
+            // comboBoxNameSPUp
+            // 
+            this.comboBoxNameSPUp.DataSource = this.specialityBindingSource;
+            this.comboBoxNameSPUp.DisplayMember = "Speciality_name";
+            this.comboBoxNameSPUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxNameSPUp.FormattingEnabled = true;
+            this.comboBoxNameSPUp.Location = new System.Drawing.Point(31, 510);
+            this.comboBoxNameSPUp.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxNameSPUp.Name = "comboBoxNameSPUp";
+            this.comboBoxNameSPUp.Size = new System.Drawing.Size(198, 33);
+            this.comboBoxNameSPUp.TabIndex = 53;
+            this.comboBoxNameSPUp.ValueMember = "Speciality_name";
+            // 
+            // specialityBindingSource
+            // 
+            this.specialityBindingSource.DataMember = "Speciality";
+            this.specialityBindingSource.DataSource = this.ZalDataSet;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(26, 420);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(223, 25);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Дані про спеціалізацію";
+            // 
+            // comboBoxIDSPUp
+            // 
+            this.comboBoxIDSPUp.DataSource = this.specialityBindingSource;
+            this.comboBoxIDSPUp.DisplayMember = "ID_Speciality";
+            this.comboBoxIDSPUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxIDSPUp.FormattingEnabled = true;
+            this.comboBoxIDSPUp.Location = new System.Drawing.Point(31, 460);
+            this.comboBoxIDSPUp.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxIDSPUp.Name = "comboBoxIDSPUp";
+            this.comboBoxIDSPUp.Size = new System.Drawing.Size(198, 33);
+            this.comboBoxIDSPUp.TabIndex = 51;
+            this.comboBoxIDSPUp.ValueMember = "ID_Speciality";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(937, 386);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(951, 519);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(159, 36);
             this.button1.TabIndex = 49;
             this.button1.Text = "Вихід";
             this.button1.UseVisualStyleBackColor = true;
@@ -417,135 +525,158 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxCUp.DataSource = this.coachBindingSource;
             this.comboBoxCUp.DisplayMember = "ID_Coach";
+            this.comboBoxCUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCUp.FormattingEnabled = true;
-            this.comboBoxCUp.Location = new System.Drawing.Point(8, 401);
+            this.comboBoxCUp.Location = new System.Drawing.Point(31, 369);
             this.comboBoxCUp.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCUp.Name = "comboBoxCUp";
-            this.comboBoxCUp.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxCUp.Size = new System.Drawing.Size(198, 33);
             this.comboBoxCUp.TabIndex = 46;
             this.comboBoxCUp.ValueMember = "ID_Coach";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(586, 315);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(779, 336);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 16);
+            this.label20.Size = new System.Drawing.Size(80, 25);
             this.label20.TabIndex = 45;
             this.label20.Text = "Пароль";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(443, 312);
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(556, 330);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 16);
+            this.label21.Size = new System.Drawing.Size(61, 25);
             this.label21.TabIndex = 44;
             this.label21.Text = "Логін";
             // 
             // textBoxPassUP
             // 
-            this.textBoxPassUP.Location = new System.Drawing.Point(573, 335);
+            this.textBoxPassUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassUP.Location = new System.Drawing.Point(715, 369);
             this.textBoxPassUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassUP.Name = "textBoxPassUP";
-            this.textBoxPassUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPassUP.Size = new System.Drawing.Size(203, 30);
             this.textBoxPassUP.TabIndex = 43;
             // 
             // textBoxLogUP
             // 
-            this.textBoxLogUP.Location = new System.Drawing.Point(424, 335);
+            this.textBoxLogUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLogUP.Location = new System.Drawing.Point(495, 369);
             this.textBoxLogUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLogUP.Name = "textBoxLogUP";
-            this.textBoxLogUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLogUP.Size = new System.Drawing.Size(181, 30);
             this.textBoxLogUP.TabIndex = 42;
             // 
             // textBoxEMailUP
             // 
-            this.textBoxEMailUP.Location = new System.Drawing.Point(775, 401);
+            this.textBoxEMailUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEMailUP.Location = new System.Drawing.Point(715, 463);
             this.textBoxEMailUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEMailUP.Name = "textBoxEMailUP";
-            this.textBoxEMailUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEMailUP.Size = new System.Drawing.Size(203, 30);
             this.textBoxEMailUP.TabIndex = 34;
             // 
             // textBoxPhoneUP
             // 
-            this.textBoxPhoneUP.Location = new System.Drawing.Point(635, 401);
+            this.textBoxPhoneUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPhoneUP.Location = new System.Drawing.Point(495, 463);
             this.textBoxPhoneUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPhoneUP.Name = "textBoxPhoneUP";
-            this.textBoxPhoneUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPhoneUP.Size = new System.Drawing.Size(181, 30);
             this.textBoxPhoneUP.TabIndex = 33;
             // 
             // textBoxSNameUP
             // 
-            this.textBoxSNameUP.Location = new System.Drawing.Point(494, 401);
+            this.textBoxSNameUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSNameUP.Location = new System.Drawing.Point(280, 463);
             this.textBoxSNameUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSNameUP.Name = "textBoxSNameUP";
-            this.textBoxSNameUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSNameUP.Size = new System.Drawing.Size(172, 30);
             this.textBoxSNameUP.TabIndex = 32;
             // 
             // textBoxNameUP
             // 
-            this.textBoxNameUP.Location = new System.Drawing.Point(352, 401);
+            this.textBoxNameUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNameUP.Location = new System.Drawing.Point(280, 369);
             this.textBoxNameUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameUP.Name = "textBoxNameUP";
-            this.textBoxNameUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNameUP.Size = new System.Drawing.Size(172, 30);
             this.textBoxNameUP.TabIndex = 31;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(771, 377);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(728, 420);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(131, 16);
+            this.label23.Size = new System.Drawing.Size(189, 25);
             this.label23.TabIndex = 40;
             this.label23.Text = "Електронна пошта";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(647, 377);
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(540, 420);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(67, 16);
+            this.label24.Size = new System.Drawing.Size(99, 25);
             this.label24.TabIndex = 39;
             this.label24.Text = "Телефон";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(507, 377);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(312, 420);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(69, 16);
+            this.label25.Size = new System.Drawing.Size(101, 25);
             this.label25.TabIndex = 38;
             this.label25.Text = "Прізвище";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(360, 377);
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(331, 330);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(31, 16);
+            this.label26.Size = new System.Drawing.Size(53, 25);
             this.label26.TabIndex = 37;
             this.label26.Text = "Ім*я";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(22, 376);
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(38, 330);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(89, 16);
+            this.label27.Size = new System.Drawing.Size(129, 25);
             this.label27.TabIndex = 36;
             this.label27.Text = "Код тренера";
             // 
             // productDataGridView1
             // 
             this.productDataGridView1.AutoGenerateColumns = false;
+            this.productDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.productDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCoachDataGridViewTextBoxColumn1,
@@ -557,12 +688,13 @@ namespace WindowsFormsApp1
             this.coachLoginDataGridViewTextBoxColumn1,
             this.coachPasswordDataGridViewTextBoxColumn1});
             this.productDataGridView1.DataSource = this.coachBindingSource;
+            this.productDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
             this.productDataGridView1.Location = new System.Drawing.Point(0, 0);
             this.productDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView1.Name = "productDataGridView1";
             this.productDataGridView1.ReadOnly = true;
             this.productDataGridView1.RowHeadersWidth = 51;
-            this.productDataGridView1.Size = new System.Drawing.Size(1056, 308);
+            this.productDataGridView1.Size = new System.Drawing.Size(1135, 308);
             this.productDataGridView1.TabIndex = 29;
             this.productDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productDataGridView1_CellContentClick);
             // 
@@ -640,10 +772,11 @@ namespace WindowsFormsApp1
             // 
             // refreshUpdateData
             // 
-            this.refreshUpdateData.Location = new System.Drawing.Point(887, 351);
+            this.refreshUpdateData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshUpdateData.Location = new System.Drawing.Point(951, 431);
             this.refreshUpdateData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshUpdateData.Name = "refreshUpdateData";
-            this.refreshUpdateData.Size = new System.Drawing.Size(159, 28);
+            this.refreshUpdateData.Size = new System.Drawing.Size(159, 36);
             this.refreshUpdateData.TabIndex = 28;
             this.refreshUpdateData.Text = "Оновити таблицю";
             this.refreshUpdateData.UseVisualStyleBackColor = true;
@@ -651,18 +784,29 @@ namespace WindowsFormsApp1
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(887, 315);
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.Location = new System.Drawing.Point(952, 348);
             this.updateButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(159, 28);
+            this.updateButton.Size = new System.Drawing.Size(159, 37);
             this.updateButton.TabIndex = 21;
             this.updateButton.Text = "Оновити";
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1135, 582);
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
+            // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.pictureBox4);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.label18);
@@ -684,37 +828,46 @@ namespace WindowsFormsApp1
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.insertButton);
             this.tabPage1.Controls.Add(this.comboBoxIDSpec);
+            this.tabPage1.Controls.Add(this.pictureBox3);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1085, 528);
+            this.tabPage1.Size = new System.Drawing.Size(1135, 582);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "INSERT";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.Insert;
+            this.pictureBox4.Location = new System.Drawing.Point(1054, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 52;
+            this.pictureBox4.TabStop = false;
             // 
             // comboBox1
             // 
             this.comboBox1.DataSource = this.specialityBindingSource;
             this.comboBox1.DisplayMember = "Speciality_name";
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(156, 366);
+            this.comboBox1.Location = new System.Drawing.Point(38, 496);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
+            this.comboBox1.Size = new System.Drawing.Size(189, 33);
             this.comboBox1.TabIndex = 50;
             this.comboBox1.ValueMember = "Speciality_name";
             // 
-            // specialityBindingSource
-            // 
-            this.specialityBindingSource.DataMember = "Speciality";
-            this.specialityBindingSource.DataSource = this.ZalDataSet;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(925, 385);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(933, 431);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(165, 30);
             this.button2.TabIndex = 49;
             this.button2.Text = "Вихід";
             this.button2.UseVisualStyleBackColor = true;
@@ -723,86 +876,96 @@ namespace WindowsFormsApp1
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(496, 369);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(531, 404);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 16);
+            this.label18.Size = new System.Drawing.Size(80, 25);
             this.label18.TabIndex = 18;
             this.label18.Text = "Пароль";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(372, 369);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(324, 404);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 16);
+            this.label19.Size = new System.Drawing.Size(61, 25);
             this.label19.TabIndex = 17;
             this.label19.Text = "Логін";
             // 
             // textBoxPassCouch
             // 
-            this.textBoxPassCouch.Location = new System.Drawing.Point(482, 385);
+            this.textBoxPassCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassCouch.Location = new System.Drawing.Point(488, 449);
             this.textBoxPassCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassCouch.Name = "textBoxPassCouch";
-            this.textBoxPassCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPassCouch.Size = new System.Drawing.Size(167, 30);
             this.textBoxPassCouch.TabIndex = 16;
             // 
             // textBoxLogCouch
             // 
-            this.textBoxLogCouch.Location = new System.Drawing.Point(342, 385);
+            this.textBoxLogCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLogCouch.Location = new System.Drawing.Point(273, 449);
             this.textBoxLogCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLogCouch.Name = "textBoxLogCouch";
-            this.textBoxLogCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLogCouch.Size = new System.Drawing.Size(171, 30);
             this.textBoxLogCouch.TabIndex = 15;
             // 
             // textBoxEMailCouch
             // 
-            this.textBoxEMailCouch.Location = new System.Drawing.Point(747, 332);
+            this.textBoxEMailCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEMailCouch.Location = new System.Drawing.Point(705, 349);
             this.textBoxEMailCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEMailCouch.Name = "textBoxEMailCouch";
-            this.textBoxEMailCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEMailCouch.Size = new System.Drawing.Size(166, 30);
             this.textBoxEMailCouch.TabIndex = 4;
             // 
             // textBoxPhoneCouch
             // 
-            this.textBoxPhoneCouch.Location = new System.Drawing.Point(607, 332);
+            this.textBoxPhoneCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPhoneCouch.Location = new System.Drawing.Point(705, 449);
             this.textBoxPhoneCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPhoneCouch.Name = "textBoxPhoneCouch";
-            this.textBoxPhoneCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPhoneCouch.Size = new System.Drawing.Size(166, 30);
             this.textBoxPhoneCouch.TabIndex = 3;
             // 
             // textBoxSNameCouch
             // 
-            this.textBoxSNameCouch.Location = new System.Drawing.Point(466, 332);
+            this.textBoxSNameCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSNameCouch.Location = new System.Drawing.Point(488, 349);
             this.textBoxSNameCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSNameCouch.Name = "textBoxSNameCouch";
-            this.textBoxSNameCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSNameCouch.Size = new System.Drawing.Size(167, 30);
             this.textBoxSNameCouch.TabIndex = 2;
             // 
             // textBoxNameCouch
             // 
-            this.textBoxNameCouch.Location = new System.Drawing.Point(324, 332);
+            this.textBoxNameCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNameCouch.Location = new System.Drawing.Point(273, 349);
             this.textBoxNameCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameCouch.Name = "textBoxNameCouch";
-            this.textBoxNameCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNameCouch.Size = new System.Drawing.Size(165, 30);
             this.textBoxNameCouch.TabIndex = 1;
             // 
             // textBoxIDCouch
             // 
-            this.textBoxIDCouch.Location = new System.Drawing.Point(16, 330);
+            this.textBoxIDCouch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIDCouch.Location = new System.Drawing.Point(38, 349);
             this.textBoxIDCouch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxIDCouch.Name = "textBoxIDCouch";
-            this.textBoxIDCouch.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIDCouch.Size = new System.Drawing.Size(184, 30);
             this.textBoxIDCouch.TabIndex = 0;
             this.textBoxIDCouch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // refreshInsertData
             // 
-            this.refreshInsertData.Location = new System.Drawing.Point(925, 346);
+            this.refreshInsertData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshInsertData.Location = new System.Drawing.Point(933, 517);
             this.refreshInsertData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshInsertData.Name = "refreshInsertData";
-            this.refreshInsertData.Size = new System.Drawing.Size(100, 28);
+            this.refreshInsertData.Size = new System.Drawing.Size(165, 33);
             this.refreshInsertData.TabIndex = 14;
             this.refreshInsertData.Text = "Оновити";
             this.refreshInsertData.UseVisualStyleBackColor = true;
@@ -811,6 +974,15 @@ namespace WindowsFormsApp1
             // productDataGridView
             // 
             this.productDataGridView.AutoGenerateColumns = false;
+            this.productDataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCoachDataGridViewTextBoxColumn,
@@ -822,12 +994,13 @@ namespace WindowsFormsApp1
             this.coachLoginDataGridViewTextBoxColumn,
             this.coachPasswordDataGridViewTextBoxColumn});
             this.productDataGridView.DataSource = this.coachBindingSource;
+            this.productDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
             this.productDataGridView.Location = new System.Drawing.Point(-8, 0);
             this.productDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView.Name = "productDataGridView";
             this.productDataGridView.ReadOnly = true;
             this.productDataGridView.RowHeadersWidth = 51;
-            this.productDataGridView.Size = new System.Drawing.Size(1089, 303);
+            this.productDataGridView.Size = new System.Drawing.Size(1143, 303);
             this.productDataGridView.TabIndex = 13;
             this.productDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productDataGridView_CellContentClick);
             // 
@@ -906,69 +1079,76 @@ namespace WindowsFormsApp1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(161, 310);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 404);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 16);
+            this.label6.Size = new System.Drawing.Size(223, 25);
             this.label6.TabIndex = 12;
             this.label6.Text = "Дані про спеціалізацію";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(743, 308);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(700, 313);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 16);
+            this.label5.Size = new System.Drawing.Size(189, 25);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Елктронна пошта";
+            this.label5.Text = "Елeктронна пошта";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(619, 308);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(739, 404);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.Size = new System.Drawing.Size(99, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Телефон";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(479, 308);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(521, 316);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 9;
             this.label3.Text = "Прізвище";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(332, 308);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(324, 316);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 16);
+            this.label2.Size = new System.Drawing.Size(53, 25);
             this.label2.TabIndex = 8;
             this.label2.Text = "Ім*я";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 306);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(46, 316);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 16);
+            this.label1.Size = new System.Drawing.Size(129, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Код тренера";
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(925, 310);
+            this.insertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertButton.Location = new System.Drawing.Point(933, 344);
             this.insertButton.Margin = new System.Windows.Forms.Padding(4);
             this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(100, 28);
+            this.insertButton.Size = new System.Drawing.Size(165, 35);
             this.insertButton.TabIndex = 6;
             this.insertButton.Text = "Вставити";
             this.insertButton.UseVisualStyleBackColor = true;
@@ -978,14 +1158,24 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxIDSpec.DataSource = this.specialityBindingSource;
             this.comboBoxIDSpec.DisplayMember = "ID_Speciality";
+            this.comboBoxIDSpec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxIDSpec.FormattingEnabled = true;
-            this.comboBoxIDSpec.Location = new System.Drawing.Point(156, 330);
+            this.comboBoxIDSpec.Location = new System.Drawing.Point(38, 446);
             this.comboBoxIDSpec.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxIDSpec.Name = "comboBoxIDSpec";
-            this.comboBoxIDSpec.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxIDSpec.Size = new System.Drawing.Size(189, 33);
             this.comboBoxIDSpec.TabIndex = 5;
             this.comboBoxIDSpec.ValueMember = "ID_Speciality";
             this.comboBoxIDSpec.SelectedIndexChanged += new System.EventHandler(this.comboBoxIDSpec_SelectedIndexChanged);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox3.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1135, 586);
+            this.pictureBox3.TabIndex = 51;
+            this.pictureBox3.TabStop = false;
             // 
             // coachBindingSource1
             // 
@@ -1002,7 +1192,7 @@ namespace WindowsFormsApp1
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1093, 557);
+            this.tabControl1.Size = new System.Drawing.Size(1143, 611);
             this.tabControl1.TabIndex = 0;
             // 
             // iDSpecialityBindingSource
@@ -1010,50 +1200,16 @@ namespace WindowsFormsApp1
             this.iDSpecialityBindingSource.DataMember = "ID_Speciality";
             this.iDSpecialityBindingSource.DataSource = this.specialityBindingSource;
             // 
-            // comboBoxNameSPUp
-            // 
-            this.comboBoxNameSPUp.DataSource = this.specialityBindingSource;
-            this.comboBoxNameSPUp.DisplayMember = "Speciality_name";
-            this.comboBoxNameSPUp.FormattingEnabled = true;
-            this.comboBoxNameSPUp.Location = new System.Drawing.Point(183, 404);
-            this.comboBoxNameSPUp.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxNameSPUp.Name = "comboBoxNameSPUp";
-            this.comboBoxNameSPUp.Size = new System.Drawing.Size(160, 24);
-            this.comboBoxNameSPUp.TabIndex = 53;
-            this.comboBoxNameSPUp.ValueMember = "Speciality_name";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(188, 348);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 16);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "Дані про спеціалізацію";
-            // 
-            // comboBoxIDSPUp
-            // 
-            this.comboBoxIDSPUp.DataSource = this.specialityBindingSource;
-            this.comboBoxIDSPUp.DisplayMember = "ID_Speciality";
-            this.comboBoxIDSPUp.FormattingEnabled = true;
-            this.comboBoxIDSPUp.Location = new System.Drawing.Point(183, 368);
-            this.comboBoxIDSPUp.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxIDSPUp.Name = "comboBoxIDSPUp";
-            this.comboBoxIDSPUp.Size = new System.Drawing.Size(160, 24);
-            this.comboBoxIDSPUp.TabIndex = 51;
-            this.comboBoxIDSPUp.ValueMember = "ID_Speciality";
-            // 
             // Coach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 557);
+            this.ClientSize = new System.Drawing.Size(1143, 611);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Coach";
-            this.Text = "ShopDB";
+            this.Text = "Gym";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zalDataSetBindingSource)).EndInit();
@@ -1066,14 +1222,20 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.iDTicketBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.specialityBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.specialityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iDSpecialityBindingSource)).EndInit();
@@ -1149,14 +1311,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button insertButton;
         private System.Windows.Forms.ComboBox comboBoxIDSpec;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCoachDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDSpecialityDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coachNameDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coachSurnameDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coachPhoneDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coachPostadressDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coachLoginDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coachPasswordDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCoachDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDSpecialityDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn coachNameDataGridViewTextBoxColumn1;
@@ -1183,6 +1337,20 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ComboBox comboBoxNameSPUp;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxIDSPUp;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCoachDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDSpecialityDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachNameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachSurnameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachPhoneDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachPostadressDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachLoginDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachPasswordDataGridViewTextBoxColumn2;
     }
 }
 

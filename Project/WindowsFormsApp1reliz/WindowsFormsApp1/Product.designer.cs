@@ -30,6 +30,9 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             this.SellingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -37,11 +40,6 @@ namespace WindowsFormsApp1
             this.buttonExitIN = new System.Windows.Forms.Button();
             this.refreshInsertData = new System.Windows.Forms.Button();
             this.productDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Product_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Product_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Product_cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.zalDataSet = new WindowsFormsApp1.ZalDataSet();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,11 +56,6 @@ namespace WindowsFormsApp1
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.productDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.refreshUpdateData = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -79,16 +72,13 @@ namespace WindowsFormsApp1
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.productDataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.refreshDelData = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.delButton = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxPriceBask = new System.Windows.Forms.TextBox();
@@ -118,18 +108,7 @@ namespace WindowsFormsApp1
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridViewBasket = new System.Windows.Forms.DataGridView();
-            this.iDProductDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productdescriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcostDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productquantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Basket_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productcostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.basketBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.basketDataSet = new WindowsFormsApp1.BasketDataSet();
             this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -148,8 +127,39 @@ namespace WindowsFormsApp1
             this.groop_Project_DataSet1 = new WindowsFormsApp1.Groop_Project_DataSet1();
             this.basketBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.basketTableAdapter2 = new WindowsFormsApp1.Groop_Project_DataSet1TableAdapters.BasketTableAdapter();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Product_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Product_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Product_cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productcostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDProductDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productdescriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productcostDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productquantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Basket_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.SellingBindingSource)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -182,6 +192,13 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.basketBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groop_Project_DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.basketBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // SellingBindingSource
@@ -200,12 +217,13 @@ namespace WindowsFormsApp1
             this.tabControl.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1673, 473);
+            this.tabControl.Size = new System.Drawing.Size(1484, 673);
             this.tabControl.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.pictureBox4);
             this.tabPage1.Controls.Add(this.buttonExitIN);
             this.tabPage1.Controls.Add(this.refreshInsertData);
             this.tabPage1.Controls.Add(this.productDataGridView);
@@ -220,20 +238,22 @@ namespace WindowsFormsApp1
             this.tabPage1.Controls.Add(this.textBox3);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1665, 372);
+            this.tabPage1.Size = new System.Drawing.Size(1476, 644);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "INSERT";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // buttonExitIN
             // 
-            this.buttonExitIN.Location = new System.Drawing.Point(1077, 313);
+            this.buttonExitIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExitIN.Location = new System.Drawing.Point(1180, 489);
             this.buttonExitIN.Name = "buttonExitIN";
-            this.buttonExitIN.Size = new System.Drawing.Size(75, 23);
+            this.buttonExitIN.Size = new System.Drawing.Size(180, 34);
             this.buttonExitIN.TabIndex = 49;
             this.buttonExitIN.Text = "Вихід";
             this.buttonExitIN.UseVisualStyleBackColor = true;
@@ -241,10 +261,11 @@ namespace WindowsFormsApp1
             // 
             // refreshInsertData
             // 
-            this.refreshInsertData.Location = new System.Drawing.Point(925, 346);
+            this.refreshInsertData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshInsertData.Location = new System.Drawing.Point(1183, 344);
             this.refreshInsertData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshInsertData.Name = "refreshInsertData";
-            this.refreshInsertData.Size = new System.Drawing.Size(100, 28);
+            this.refreshInsertData.Size = new System.Drawing.Size(177, 34);
             this.refreshInsertData.TabIndex = 14;
             this.refreshInsertData.Text = "Оновити";
             this.refreshInsertData.UseVisualStyleBackColor = true;
@@ -253,6 +274,15 @@ namespace WindowsFormsApp1
             // productDataGridView
             // 
             this.productDataGridView.AutoGenerateColumns = false;
+            this.productDataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -261,58 +291,13 @@ namespace WindowsFormsApp1
             this.Product_description,
             this.Product_cost});
             this.productDataGridView.DataSource = this.productBindingSource8;
-            this.productDataGridView.Location = new System.Drawing.Point(-8, 0);
+            this.productDataGridView.Location = new System.Drawing.Point(0, -1);
             this.productDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView.Name = "productDataGridView";
             this.productDataGridView.ReadOnly = true;
             this.productDataGridView.RowHeadersWidth = 51;
-            this.productDataGridView.Size = new System.Drawing.Size(1441, 303);
+            this.productDataGridView.Size = new System.Drawing.Size(1476, 248);
             this.productDataGridView.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_Product";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID_Product";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Product_name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Product_name";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // Product_quantity
-            // 
-            this.Product_quantity.DataPropertyName = "Product_quantity";
-            this.Product_quantity.HeaderText = "Product_quantity";
-            this.Product_quantity.MinimumWidth = 6;
-            this.Product_quantity.Name = "Product_quantity";
-            this.Product_quantity.ReadOnly = true;
-            this.Product_quantity.Width = 125;
-            // 
-            // Product_description
-            // 
-            this.Product_description.DataPropertyName = "Product_description";
-            this.Product_description.HeaderText = "Product_description";
-            this.Product_description.MinimumWidth = 6;
-            this.Product_description.Name = "Product_description";
-            this.Product_description.ReadOnly = true;
-            this.Product_description.Width = 125;
-            // 
-            // Product_cost
-            // 
-            this.Product_cost.DataPropertyName = "Product_cost";
-            this.Product_cost.HeaderText = "Product_cost";
-            this.Product_cost.MinimumWidth = 6;
-            this.Product_cost.Name = "Product_cost";
-            this.Product_cost.ReadOnly = true;
-            this.Product_cost.Width = 125;
             // 
             // productBindingSource8
             // 
@@ -327,59 +312,65 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(577, 310);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1038, 309);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 16);
+            this.label5.Size = new System.Drawing.Size(51, 25);
             this.label5.TabIndex = 11;
             this.label5.Text = "Ціна";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(452, 306);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(739, 309);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 16);
+            this.label4.Size = new System.Drawing.Size(149, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Опис продукту";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(294, 306);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(541, 305);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 16);
+            this.label3.Size = new System.Drawing.Size(96, 25);
             this.label3.TabIndex = 9;
             this.label3.Text = "Кількість";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(165, 306);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(314, 306);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 16);
+            this.label2.Size = new System.Drawing.Size(156, 25);
             this.label2.TabIndex = 8;
             this.label2.Text = "Назва продукту";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 306);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(133, 305);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 16);
+            this.label1.Size = new System.Drawing.Size(124, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "ІД продукту";
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(925, 310);
+            this.insertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertButton.Location = new System.Drawing.Point(1183, 416);
             this.insertButton.Margin = new System.Windows.Forms.Padding(4);
             this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(100, 28);
+            this.insertButton.Size = new System.Drawing.Size(177, 34);
             this.insertButton.TabIndex = 6;
             this.insertButton.Text = "Вставити";
             this.insertButton.UseVisualStyleBackColor = true;
@@ -387,47 +378,53 @@ namespace WindowsFormsApp1
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(297, 330);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(525, 346);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 22);
+            this.textBox5.Size = new System.Drawing.Size(178, 30);
             this.textBox5.TabIndex = 4;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(440, 330);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(744, 346);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 22);
+            this.textBox4.Size = new System.Drawing.Size(189, 30);
             this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(580, 330);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(975, 346);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 22);
+            this.textBox3.Size = new System.Drawing.Size(180, 30);
             this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 330);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(306, 346);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
+            this.textBox2.Size = new System.Drawing.Size(191, 30);
             this.textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 330);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(119, 346);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
+            this.textBox1.Size = new System.Drawing.Size(168, 30);
             this.textBox1.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.pictureBox5);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.productDataGridView1);
             this.tabPage2.Controls.Add(this.refreshUpdateData);
@@ -442,20 +439,22 @@ namespace WindowsFormsApp1
             this.tabPage2.Controls.Add(this.textBox7);
             this.tabPage2.Controls.Add(this.textBox8);
             this.tabPage2.Controls.Add(this.textBox9);
+            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1665, 372);
+            this.tabPage2.Size = new System.Drawing.Size(1476, 644);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "UPDATE";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1098, 315);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(942, 410);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(166, 31);
             this.button4.TabIndex = 49;
             this.button4.Text = "Вихід";
             this.button4.UseVisualStyleBackColor = true;
@@ -464,6 +463,15 @@ namespace WindowsFormsApp1
             // productDataGridView1
             // 
             this.productDataGridView1.AutoGenerateColumns = false;
+            this.productDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.productDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
@@ -472,58 +480,13 @@ namespace WindowsFormsApp1
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn4});
             this.productDataGridView1.DataSource = this.productBindingSource7;
-            this.productDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.productDataGridView1.Location = new System.Drawing.Point(-1, 0);
             this.productDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView1.Name = "productDataGridView1";
             this.productDataGridView1.ReadOnly = true;
             this.productDataGridView1.RowHeadersWidth = 51;
-            this.productDataGridView1.Size = new System.Drawing.Size(1393, 308);
+            this.productDataGridView1.Size = new System.Drawing.Size(1477, 282);
             this.productDataGridView1.TabIndex = 29;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ID_Product";
-            this.dataGridViewTextBoxColumn7.HeaderText = "ID_Product";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Product_name";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Product_name";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Product_cost";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Product_cost";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Product_description";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Product_description";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Product_quantity";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Product_quantity";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // productBindingSource7
             // 
@@ -532,10 +495,11 @@ namespace WindowsFormsApp1
             // 
             // refreshUpdateData
             // 
-            this.refreshUpdateData.Location = new System.Drawing.Point(887, 351);
+            this.refreshUpdateData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshUpdateData.Location = new System.Drawing.Point(1154, 410);
             this.refreshUpdateData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshUpdateData.Name = "refreshUpdateData";
-            this.refreshUpdateData.Size = new System.Drawing.Size(159, 28);
+            this.refreshUpdateData.Size = new System.Drawing.Size(171, 31);
             this.refreshUpdateData.TabIndex = 28;
             this.refreshUpdateData.Text = "Оновити таблицю";
             this.refreshUpdateData.UseVisualStyleBackColor = true;
@@ -544,59 +508,65 @@ namespace WindowsFormsApp1
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(572, 311);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(972, 328);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 16);
+            this.label8.Size = new System.Drawing.Size(96, 25);
             this.label8.TabIndex = 26;
             this.label8.Text = "Кількість";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(448, 311);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(732, 328);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 16);
+            this.label9.Size = new System.Drawing.Size(149, 25);
             this.label9.TabIndex = 25;
             this.label9.Text = "Опис продукту";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(308, 311);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(563, 328);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 16);
+            this.label10.Size = new System.Drawing.Size(56, 25);
             this.label10.TabIndex = 24;
             this.label10.Text = "Ціна ";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(161, 311);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(309, 328);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 16);
+            this.label11.Size = new System.Drawing.Size(156, 25);
             this.label11.TabIndex = 23;
             this.label11.Text = "Назва продукту";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 311);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(117, 328);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 16);
+            this.label12.Size = new System.Drawing.Size(124, 25);
             this.label12.TabIndex = 22;
             this.label12.Text = "ІД продукту";
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(887, 315);
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.Location = new System.Drawing.Point(1154, 357);
             this.updateButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(159, 28);
+            this.updateButton.Size = new System.Drawing.Size(171, 33);
             this.updateButton.TabIndex = 21;
             this.updateButton.Text = "Оновити";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -606,70 +576,78 @@ namespace WindowsFormsApp1
             // 
             this.comboBox2.DataSource = this.productBindingSource7;
             this.comboBox2.DisplayMember = "ID_Product";
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(4, 334);
+            this.comboBox2.Location = new System.Drawing.Point(96, 357);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(144, 24);
+            this.comboBox2.Size = new System.Drawing.Size(167, 33);
             this.comboBox2.TabIndex = 20;
             this.comboBox2.ValueMember = "ID_Product";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(576, 335);
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(942, 360);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 22);
+            this.textBox6.Size = new System.Drawing.Size(166, 30);
             this.textBox6.TabIndex = 19;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(436, 335);
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(715, 360);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 22);
+            this.textBox7.Size = new System.Drawing.Size(166, 30);
             this.textBox7.TabIndex = 18;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(295, 335);
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(505, 360);
             this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 22);
+            this.textBox8.Size = new System.Drawing.Size(166, 30);
             this.textBox8.TabIndex = 17;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(153, 335);
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(299, 360);
             this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(132, 22);
+            this.textBox9.Size = new System.Drawing.Size(166, 30);
             this.textBox9.TabIndex = 16;
             // 
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.pictureBox6);
             this.tabPage3.Controls.Add(this.button5);
             this.tabPage3.Controls.Add(this.productDataGridView2);
             this.tabPage3.Controls.Add(this.refreshDelData);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.delButton);
             this.tabPage3.Controls.Add(this.comboBox4);
+            this.tabPage3.Controls.Add(this.pictureBox2);
             this.tabPage3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1665, 372);
+            this.tabPage3.Size = new System.Drawing.Size(1476, 644);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "DELETE";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(918, 340);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(988, 428);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(151, 33);
             this.button5.TabIndex = 49;
             this.button5.Text = "Вихід";
             this.button5.UseVisualStyleBackColor = true;
@@ -678,6 +656,15 @@ namespace WindowsFormsApp1
             // productDataGridView2
             // 
             this.productDataGridView2.AutoGenerateColumns = false;
+            this.productDataGridView2.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.productDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn13,
@@ -686,65 +673,21 @@ namespace WindowsFormsApp1
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn6});
             this.productDataGridView2.DataSource = this.productBindingSource7;
-            this.productDataGridView2.Location = new System.Drawing.Point(-5, 0);
+            this.productDataGridView2.Location = new System.Drawing.Point(-1, 0);
             this.productDataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView2.Name = "productDataGridView2";
             this.productDataGridView2.ReadOnly = true;
             this.productDataGridView2.RowHeadersWidth = 51;
-            this.productDataGridView2.Size = new System.Drawing.Size(1408, 314);
+            this.productDataGridView2.Size = new System.Drawing.Size(1477, 314);
             this.productDataGridView2.TabIndex = 32;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "ID_Product";
-            this.dataGridViewTextBoxColumn13.HeaderText = "ID_Product";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Product_name";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Product_name";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            this.dataGridViewTextBoxColumn14.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Product_quantity";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Product_quantity";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Product_description";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Product_description";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            this.dataGridViewTextBoxColumn16.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Product_cost";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Product_cost";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
             // 
             // refreshDelData
             // 
-            this.refreshDelData.Location = new System.Drawing.Point(583, 340);
+            this.refreshDelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshDelData.Location = new System.Drawing.Point(766, 428);
             this.refreshDelData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshDelData.Name = "refreshDelData";
-            this.refreshDelData.Size = new System.Drawing.Size(100, 28);
+            this.refreshDelData.Size = new System.Drawing.Size(155, 33);
             this.refreshDelData.TabIndex = 32;
             this.refreshDelData.Text = "Оновити";
             this.refreshDelData.UseVisualStyleBackColor = true;
@@ -753,19 +696,21 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(348, 318);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(347, 389);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 16);
+            this.label13.Size = new System.Drawing.Size(124, 25);
             this.label13.TabIndex = 31;
             this.label13.Text = "ІД продукту";
             // 
             // delButton
             // 
-            this.delButton.Location = new System.Drawing.Point(475, 340);
+            this.delButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delButton.Location = new System.Drawing.Point(548, 428);
             this.delButton.Margin = new System.Windows.Forms.Padding(4);
             this.delButton.Name = "delButton";
-            this.delButton.Size = new System.Drawing.Size(100, 28);
+            this.delButton.Size = new System.Drawing.Size(170, 33);
             this.delButton.TabIndex = 30;
             this.delButton.Text = "Видалити";
             this.delButton.UseVisualStyleBackColor = true;
@@ -775,11 +720,12 @@ namespace WindowsFormsApp1
             // 
             this.comboBox4.DataSource = this.productBindingSource7;
             this.comboBox4.DisplayMember = "ID_Product";
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(321, 340);
+            this.comboBox4.Location = new System.Drawing.Point(309, 429);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(144, 24);
+            this.comboBox4.Size = new System.Drawing.Size(195, 33);
             this.comboBox4.TabIndex = 29;
             this.comboBox4.ValueMember = "ID_Product";
             // 
@@ -816,21 +762,43 @@ namespace WindowsFormsApp1
             this.tabPage5.Controls.Add(this.dataGridView3);
             this.tabPage5.Controls.Add(this.dataGridViewBasket);
             this.tabPage5.Controls.Add(this.dataGridView1);
+            this.tabPage5.Controls.Add(this.pictureBox3);
+            this.tabPage5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1665, 444);
+            this.tabPage5.Size = new System.Drawing.Size(1476, 644);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Продаж";
             this.tabPage5.UseVisualStyleBackColor = true;
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(698, 475);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(189, 45);
+            this.button6.TabIndex = 50;
+            this.button6.Text = "Готівкою";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(698, 381);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(189, 66);
+            this.button3.TabIndex = 49;
+            this.button3.Text = "Оплатити через\r\nPrivat24";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1323, 252);
+            this.button2.Location = new System.Drawing.Point(1189, 539);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(230, 33);
             this.button2.TabIndex = 48;
             this.button2.Text = "Вихід";
             this.button2.UseVisualStyleBackColor = true;
@@ -838,9 +806,9 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1323, 281);
+            this.button1.Location = new System.Drawing.Point(932, 381);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(228, 33);
             this.button1.TabIndex = 47;
             this.button1.Text = "Оплатити";
             this.button1.UseVisualStyleBackColor = true;
@@ -848,20 +816,22 @@ namespace WindowsFormsApp1
             // 
             // textBoxPriceBask
             // 
-            this.textBoxPriceBask.Location = new System.Drawing.Point(320, 297);
+            this.textBoxPriceBask.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPriceBask.Location = new System.Drawing.Point(257, 432);
             this.textBoxPriceBask.Name = "textBoxPriceBask";
-            this.textBoxPriceBask.Size = new System.Drawing.Size(144, 22);
+            this.textBoxPriceBask.Size = new System.Drawing.Size(184, 30);
             this.textBoxPriceBask.TabIndex = 46;
             // 
             // comboBox1
             // 
             this.comboBox1.DataSource = this.basketBindingSource1;
             this.comboBox1.DisplayMember = "Product_quantity_";
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(646, 323);
+            this.comboBox1.Location = new System.Drawing.Point(495, 550);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 24);
+            this.comboBox1.Size = new System.Drawing.Size(180, 33);
             this.comboBox1.TabIndex = 45;
             this.comboBox1.ValueMember = "Product_quantity_";
             // 
@@ -878,18 +848,18 @@ namespace WindowsFormsApp1
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(391, 326);
+            this.label21.Location = new System.Drawing.Point(319, 506);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(246, 16);
+            this.label21.Size = new System.Drawing.Size(356, 25);
             this.label21.TabIndex = 44;
             this.label21.Text = "Виберіть теперішню кількість товару";
             // 
             // buttonUPBasket
             // 
-            this.buttonUPBasket.Location = new System.Drawing.Point(1091, 252);
+            this.buttonUPBasket.Location = new System.Drawing.Point(932, 334);
             this.buttonUPBasket.Name = "buttonUPBasket";
-            this.buttonUPBasket.Size = new System.Drawing.Size(202, 23);
+            this.buttonUPBasket.Size = new System.Drawing.Size(228, 31);
             this.buttonUPBasket.TabIndex = 42;
             this.buttonUPBasket.Text = "Змінити кількість товару";
             this.buttonUPBasket.UseVisualStyleBackColor = true;
@@ -898,23 +868,24 @@ namespace WindowsFormsApp1
             // textBoxQPrINProd
             // 
             this.textBoxQPrINProd.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxQPrINProd.Location = new System.Drawing.Point(812, 326);
+            this.textBoxQPrINProd.Location = new System.Drawing.Point(932, 482);
             this.textBoxQPrINProd.Name = "textBoxQPrINProd";
-            this.textBoxQPrINProd.Size = new System.Drawing.Size(34, 22);
+            this.textBoxQPrINProd.Size = new System.Drawing.Size(228, 30);
             this.textBoxQPrINProd.TabIndex = 41;
             // 
             // textBoxQPrIN
             // 
-            this.textBoxQPrIN.Location = new System.Drawing.Point(646, 297);
+            this.textBoxQPrIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQPrIN.Location = new System.Drawing.Point(495, 433);
             this.textBoxQPrIN.Name = "textBoxQPrIN";
-            this.textBoxQPrIN.Size = new System.Drawing.Size(144, 22);
+            this.textBoxQPrIN.Size = new System.Drawing.Size(180, 30);
             this.textBoxQPrIN.TabIndex = 40;
             // 
             // buttonDellBask
             // 
-            this.buttonDellBask.Location = new System.Drawing.Point(1243, 223);
+            this.buttonDellBask.Location = new System.Drawing.Point(1189, 281);
             this.buttonDellBask.Name = "buttonDellBask";
-            this.buttonDellBask.Size = new System.Drawing.Size(172, 23);
+            this.buttonDellBask.Size = new System.Drawing.Size(230, 36);
             this.buttonDellBask.TabIndex = 39;
             this.buttonDellBask.Text = "Видалити з кошика";
             this.buttonDellBask.UseVisualStyleBackColor = true;
@@ -923,18 +894,18 @@ namespace WindowsFormsApp1
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(19, 329);
+            this.label20.Location = new System.Drawing.Point(538, 281);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 16);
+            this.label20.Size = new System.Drawing.Size(75, 25);
             this.label20.TabIndex = 38;
             this.label20.Text = "label20";
             // 
             // buttonBuketUP
             // 
-            this.buttonBuketUP.Location = new System.Drawing.Point(1091, 281);
+            this.buttonBuketUP.Location = new System.Drawing.Point(1189, 334);
             this.buttonBuketUP.Name = "buttonBuketUP";
-            this.buttonBuketUP.Size = new System.Drawing.Size(158, 23);
+            this.buttonBuketUP.Size = new System.Drawing.Size(230, 31);
             this.buttonBuketUP.TabIndex = 37;
             this.buttonBuketUP.Text = "Оновити таблицю";
             this.buttonBuketUP.UseVisualStyleBackColor = true;
@@ -942,9 +913,9 @@ namespace WindowsFormsApp1
             // 
             // buttonBasketIN
             // 
-            this.buttonBasketIN.Location = new System.Drawing.Point(1091, 223);
+            this.buttonBasketIN.Location = new System.Drawing.Point(932, 281);
             this.buttonBasketIN.Name = "buttonBasketIN";
-            this.buttonBasketIN.Size = new System.Drawing.Size(116, 23);
+            this.buttonBasketIN.Size = new System.Drawing.Size(228, 35);
             this.buttonBasketIN.TabIndex = 36;
             this.buttonBasketIN.Text = "В кошик";
             this.buttonBasketIN.UseVisualStyleBackColor = true;
@@ -954,11 +925,12 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxQPr.DataSource = this.productBindingSource7;
             this.comboBoxQPr.DisplayMember = "Product_quantity";
+            this.comboBoxQPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxQPr.FormattingEnabled = true;
-            this.comboBoxQPr.Location = new System.Drawing.Point(646, 266);
+            this.comboBoxQPr.Location = new System.Drawing.Point(495, 381);
             this.comboBoxQPr.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxQPr.Name = "comboBoxQPr";
-            this.comboBoxQPr.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxQPr.Size = new System.Drawing.Size(180, 33);
             this.comboBoxQPr.TabIndex = 35;
             this.comboBoxQPr.ValueMember = "Product_quantity";
             // 
@@ -966,11 +938,12 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxDescPr.DataSource = this.productBindingSource7;
             this.comboBoxDescPr.DisplayMember = "Product_description";
+            this.comboBoxDescPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDescPr.FormattingEnabled = true;
-            this.comboBoxDescPr.Location = new System.Drawing.Point(472, 266);
+            this.comboBoxDescPr.Location = new System.Drawing.Point(26, 381);
             this.comboBoxDescPr.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxDescPr.Name = "comboBoxDescPr";
-            this.comboBoxDescPr.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxDescPr.Size = new System.Drawing.Size(190, 33);
             this.comboBoxDescPr.TabIndex = 34;
             this.comboBoxDescPr.ValueMember = "Product_description";
             // 
@@ -978,11 +951,12 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxCostPr.DataSource = this.productBindingSource7;
             this.comboBoxCostPr.DisplayMember = "Product_cost";
+            this.comboBoxCostPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCostPr.FormattingEnabled = true;
-            this.comboBoxCostPr.Location = new System.Drawing.Point(320, 266);
+            this.comboBoxCostPr.Location = new System.Drawing.Point(257, 382);
             this.comboBoxCostPr.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCostPr.Name = "comboBoxCostPr";
-            this.comboBoxCostPr.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxCostPr.Size = new System.Drawing.Size(184, 33);
             this.comboBoxCostPr.TabIndex = 33;
             this.comboBoxCostPr.ValueMember = "Product_cost";
             // 
@@ -990,61 +964,66 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxNamePr.DataSource = this.productBindingSource7;
             this.comboBoxNamePr.DisplayMember = "Product_name";
+            this.comboBoxNamePr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxNamePr.FormattingEnabled = true;
-            this.comboBoxNamePr.Location = new System.Drawing.Point(157, 266);
+            this.comboBoxNamePr.Location = new System.Drawing.Point(257, 284);
             this.comboBoxNamePr.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxNamePr.Name = "comboBoxNamePr";
-            this.comboBoxNamePr.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxNamePr.Size = new System.Drawing.Size(180, 33);
             this.comboBoxNamePr.TabIndex = 32;
             this.comboBoxNamePr.ValueMember = "Product_name";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(643, 234);
+            this.label15.Location = new System.Drawing.Point(538, 351);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 16);
+            this.label15.Size = new System.Drawing.Size(96, 25);
             this.label15.TabIndex = 31;
             this.label15.Text = "Кількість";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(469, 234);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(39, 339);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(105, 16);
+            this.label16.Size = new System.Drawing.Size(149, 25);
             this.label16.TabIndex = 30;
             this.label16.Text = "Опис продукту";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(329, 234);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(313, 348);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(38, 16);
+            this.label17.Size = new System.Drawing.Size(56, 25);
             this.label17.TabIndex = 29;
             this.label17.Text = "Ціна ";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(182, 234);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(271, 250);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(114, 16);
+            this.label18.Size = new System.Drawing.Size(156, 25);
             this.label18.TabIndex = 28;
             this.label18.Text = "Назва продукту";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(52, 234);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(50, 250);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(84, 16);
+            this.label19.Size = new System.Drawing.Size(124, 25);
             this.label19.TabIndex = 27;
             this.label19.Text = "ІД продукту";
             // 
@@ -1052,45 +1031,49 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxIDPr.DataSource = this.productBindingSource7;
             this.comboBoxIDPr.DisplayMember = "ID_Product";
+            this.comboBoxIDPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxIDPr.FormattingEnabled = true;
-            this.comboBoxIDPr.Location = new System.Drawing.Point(5, 266);
+            this.comboBoxIDPr.Location = new System.Drawing.Point(26, 284);
             this.comboBoxIDPr.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxIDPr.Name = "comboBoxIDPr";
-            this.comboBoxIDPr.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxIDPr.Size = new System.Drawing.Size(190, 33);
             this.comboBoxIDPr.TabIndex = 21;
             this.comboBoxIDPr.ValueMember = "ID_Product";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(979, 204);
+            this.label14.Location = new System.Drawing.Point(761, 250);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 16);
+            this.label14.Size = new System.Drawing.Size(61, 25);
             this.label14.TabIndex = 5;
             this.label14.Text = "Сума";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(809, 14);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(1016, 5);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 16);
+            this.label7.Size = new System.Drawing.Size(72, 25);
             this.label7.TabIndex = 4;
             this.label7.Text = "Кошик";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 14);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(226, 5);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 16);
+            this.label6.Size = new System.Drawing.Size(87, 25);
             this.label6.TabIndex = 3;
             this.label6.Text = "Каталог";
             // 
             // dataGridView3
             // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(869, 223);
+            this.dataGridView3.Location = new System.Drawing.Point(698, 284);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.Size = new System.Drawing.Size(189, 81);
@@ -1102,6 +1085,7 @@ namespace WindowsFormsApp1
             this.dataGridViewBasket.AllowUserToAddRows = false;
             this.dataGridViewBasket.AllowUserToDeleteRows = false;
             this.dataGridViewBasket.AutoGenerateColumns = false;
+            this.dataGridViewBasket.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewBasket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBasket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDProductDataGridViewTextBoxColumn1,
@@ -1111,70 +1095,17 @@ namespace WindowsFormsApp1
             this.productquantityDataGridViewTextBoxColumn1,
             this.Basket_time});
             this.dataGridViewBasket.DataSource = this.basketBindingSource1;
-            this.dataGridViewBasket.Location = new System.Drawing.Point(664, 33);
+            this.dataGridViewBasket.Location = new System.Drawing.Point(646, 44);
             this.dataGridViewBasket.Name = "dataGridViewBasket";
             this.dataGridViewBasket.ReadOnly = true;
             this.dataGridViewBasket.RowHeadersWidth = 51;
-            this.dataGridViewBasket.Size = new System.Drawing.Size(751, 150);
+            this.dataGridViewBasket.Size = new System.Drawing.Size(830, 150);
             this.dataGridViewBasket.TabIndex = 1;
-            // 
-            // iDProductDataGridViewTextBoxColumn1
-            // 
-            this.iDProductDataGridViewTextBoxColumn1.DataPropertyName = "ID_Product_";
-            this.iDProductDataGridViewTextBoxColumn1.HeaderText = "ID_Product_";
-            this.iDProductDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.iDProductDataGridViewTextBoxColumn1.Name = "iDProductDataGridViewTextBoxColumn1";
-            this.iDProductDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.iDProductDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // productnameDataGridViewTextBoxColumn1
-            // 
-            this.productnameDataGridViewTextBoxColumn1.DataPropertyName = "Product_name_";
-            this.productnameDataGridViewTextBoxColumn1.HeaderText = "Product_name_";
-            this.productnameDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.productnameDataGridViewTextBoxColumn1.Name = "productnameDataGridViewTextBoxColumn1";
-            this.productnameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productnameDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // productdescriptionDataGridViewTextBoxColumn1
-            // 
-            this.productdescriptionDataGridViewTextBoxColumn1.DataPropertyName = "Product_description_";
-            this.productdescriptionDataGridViewTextBoxColumn1.HeaderText = "Product_description_";
-            this.productdescriptionDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.productdescriptionDataGridViewTextBoxColumn1.Name = "productdescriptionDataGridViewTextBoxColumn1";
-            this.productdescriptionDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productdescriptionDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // productcostDataGridViewTextBoxColumn1
-            // 
-            this.productcostDataGridViewTextBoxColumn1.DataPropertyName = "Product_cost_";
-            this.productcostDataGridViewTextBoxColumn1.HeaderText = "Product_cost_";
-            this.productcostDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.productcostDataGridViewTextBoxColumn1.Name = "productcostDataGridViewTextBoxColumn1";
-            this.productcostDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productcostDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // productquantityDataGridViewTextBoxColumn1
-            // 
-            this.productquantityDataGridViewTextBoxColumn1.DataPropertyName = "Product_quantity_";
-            this.productquantityDataGridViewTextBoxColumn1.HeaderText = "Product_quantity_";
-            this.productquantityDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.productquantityDataGridViewTextBoxColumn1.Name = "productquantityDataGridViewTextBoxColumn1";
-            this.productquantityDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productquantityDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // Basket_time
-            // 
-            this.Basket_time.DataPropertyName = "Basket_time";
-            this.Basket_time.HeaderText = "Basket_time";
-            this.Basket_time.MinimumWidth = 6;
-            this.Basket_time.Name = "Basket_time";
-            this.Basket_time.ReadOnly = true;
-            this.Basket_time.Width = 125;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDProductDataGridViewTextBoxColumn,
@@ -1183,53 +1114,13 @@ namespace WindowsFormsApp1
             this.productcostDataGridViewTextBoxColumn,
             this.productquantityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productBindingSource8;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 44);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(559, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(611, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // iDProductDataGridViewTextBoxColumn
-            // 
-            this.iDProductDataGridViewTextBoxColumn.DataPropertyName = "ID_Product";
-            this.iDProductDataGridViewTextBoxColumn.HeaderText = "ID_Product";
-            this.iDProductDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDProductDataGridViewTextBoxColumn.Name = "iDProductDataGridViewTextBoxColumn";
-            this.iDProductDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // productnameDataGridViewTextBoxColumn
-            // 
-            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "Product_name";
-            this.productnameDataGridViewTextBoxColumn.HeaderText = "Product_name";
-            this.productnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
-            this.productnameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // productdescriptionDataGridViewTextBoxColumn
-            // 
-            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "Product_description";
-            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "Product_description";
-            this.productdescriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
-            this.productdescriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // productcostDataGridViewTextBoxColumn
-            // 
-            this.productcostDataGridViewTextBoxColumn.DataPropertyName = "Product_cost";
-            this.productcostDataGridViewTextBoxColumn.HeaderText = "Product_cost";
-            this.productcostDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.productcostDataGridViewTextBoxColumn.Name = "productcostDataGridViewTextBoxColumn";
-            this.productcostDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // productquantityDataGridViewTextBoxColumn
-            // 
-            this.productquantityDataGridViewTextBoxColumn.DataPropertyName = "Product_quantity";
-            this.productquantityDataGridViewTextBoxColumn.HeaderText = "Product_quantity";
-            this.productquantityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.productquantityDataGridViewTextBoxColumn.Name = "productquantityDataGridViewTextBoxColumn";
-            this.productquantityDataGridViewTextBoxColumn.Width = 125;
             // 
             // basketBindingSource
             // 
@@ -1304,31 +1195,309 @@ namespace WindowsFormsApp1
             // 
             this.basketTableAdapter2.ClearBeforeFill = true;
             // 
-            // button3
+            // pictureBox7
             // 
-            this.button3.Location = new System.Drawing.Point(869, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 66);
-            this.button3.TabIndex = 49;
-            this.button3.Text = "Оплатити через\r\nPrivat24";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox7.Location = new System.Drawing.Point(-4, -1);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(1480, 643);
+            this.pictureBox7.TabIndex = 101;
+            this.pictureBox7.TabStop = false;
             // 
-            // button6
+            // pictureBox1
             // 
-            this.button6.Location = new System.Drawing.Point(990, 310);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 66);
-            this.button6.TabIndex = 50;
-            this.button6.Text = "Готівкою";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1478, 597);
+            this.pictureBox1.TabIndex = 102;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox2.Location = new System.Drawing.Point(-5, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1481, 635);
+            this.pictureBox2.TabIndex = 103;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1477, 644);
+            this.pictureBox3.TabIndex = 104;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.delete;
+            this.pictureBox6.Location = new System.Drawing.Point(1382, 17);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 104;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.update;
+            this.pictureBox5.Location = new System.Drawing.Point(1386, 16);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 103;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.Insert;
+            this.pictureBox4.Location = new System.Drawing.Point(1407, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 102;
+            this.pictureBox4.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_Product";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код продукту";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Product_name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Назва ";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // Product_quantity
+            // 
+            this.Product_quantity.DataPropertyName = "Product_quantity";
+            this.Product_quantity.HeaderText = "Кількість";
+            this.Product_quantity.MinimumWidth = 6;
+            this.Product_quantity.Name = "Product_quantity";
+            this.Product_quantity.ReadOnly = true;
+            this.Product_quantity.Width = 125;
+            // 
+            // Product_description
+            // 
+            this.Product_description.DataPropertyName = "Product_description";
+            this.Product_description.HeaderText = "Опис";
+            this.Product_description.MinimumWidth = 6;
+            this.Product_description.Name = "Product_description";
+            this.Product_description.ReadOnly = true;
+            this.Product_description.Width = 125;
+            // 
+            // Product_cost
+            // 
+            this.Product_cost.DataPropertyName = "Product_cost";
+            this.Product_cost.HeaderText = "Ціна";
+            this.Product_cost.MinimumWidth = 6;
+            this.Product_cost.Name = "Product_cost";
+            this.Product_cost.ReadOnly = true;
+            this.Product_cost.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ID_Product";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Код продукту";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Product_name";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Назва";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Product_cost";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Ціна";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Product_description";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Опис";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Product_quantity";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Кількість";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "ID_Product";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Код продукту";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Product_name";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Назва";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Product_quantity";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Кількість";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Product_description";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Опис";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Product_cost";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Ціна";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // iDProductDataGridViewTextBoxColumn
+            // 
+            this.iDProductDataGridViewTextBoxColumn.DataPropertyName = "ID_Product";
+            this.iDProductDataGridViewTextBoxColumn.HeaderText = "Код продукту";
+            this.iDProductDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDProductDataGridViewTextBoxColumn.Name = "iDProductDataGridViewTextBoxColumn";
+            this.iDProductDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // productnameDataGridViewTextBoxColumn
+            // 
+            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "Product_name";
+            this.productnameDataGridViewTextBoxColumn.HeaderText = "Назва";
+            this.productnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
+            this.productnameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // productdescriptionDataGridViewTextBoxColumn
+            // 
+            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "Product_description";
+            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "Опис";
+            this.productdescriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
+            this.productdescriptionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // productcostDataGridViewTextBoxColumn
+            // 
+            this.productcostDataGridViewTextBoxColumn.DataPropertyName = "Product_cost";
+            this.productcostDataGridViewTextBoxColumn.HeaderText = "Ціна";
+            this.productcostDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productcostDataGridViewTextBoxColumn.Name = "productcostDataGridViewTextBoxColumn";
+            this.productcostDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // productquantityDataGridViewTextBoxColumn
+            // 
+            this.productquantityDataGridViewTextBoxColumn.DataPropertyName = "Product_quantity";
+            this.productquantityDataGridViewTextBoxColumn.HeaderText = "Кількість";
+            this.productquantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productquantityDataGridViewTextBoxColumn.Name = "productquantityDataGridViewTextBoxColumn";
+            this.productquantityDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // iDProductDataGridViewTextBoxColumn1
+            // 
+            this.iDProductDataGridViewTextBoxColumn1.DataPropertyName = "ID_Product_";
+            this.iDProductDataGridViewTextBoxColumn1.HeaderText = "Код продукту";
+            this.iDProductDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.iDProductDataGridViewTextBoxColumn1.Name = "iDProductDataGridViewTextBoxColumn1";
+            this.iDProductDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.iDProductDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // productnameDataGridViewTextBoxColumn1
+            // 
+            this.productnameDataGridViewTextBoxColumn1.DataPropertyName = "Product_name_";
+            this.productnameDataGridViewTextBoxColumn1.HeaderText = "Назва";
+            this.productnameDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.productnameDataGridViewTextBoxColumn1.Name = "productnameDataGridViewTextBoxColumn1";
+            this.productnameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productnameDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // productdescriptionDataGridViewTextBoxColumn1
+            // 
+            this.productdescriptionDataGridViewTextBoxColumn1.DataPropertyName = "Product_description_";
+            this.productdescriptionDataGridViewTextBoxColumn1.HeaderText = "Опис";
+            this.productdescriptionDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.productdescriptionDataGridViewTextBoxColumn1.Name = "productdescriptionDataGridViewTextBoxColumn1";
+            this.productdescriptionDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productdescriptionDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // productcostDataGridViewTextBoxColumn1
+            // 
+            this.productcostDataGridViewTextBoxColumn1.DataPropertyName = "Product_cost_";
+            this.productcostDataGridViewTextBoxColumn1.HeaderText = "Ціна";
+            this.productcostDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.productcostDataGridViewTextBoxColumn1.Name = "productcostDataGridViewTextBoxColumn1";
+            this.productcostDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productcostDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // productquantityDataGridViewTextBoxColumn1
+            // 
+            this.productquantityDataGridViewTextBoxColumn1.DataPropertyName = "Product_quantity_";
+            this.productquantityDataGridViewTextBoxColumn1.HeaderText = "Кількість";
+            this.productquantityDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.productquantityDataGridViewTextBoxColumn1.Name = "productquantityDataGridViewTextBoxColumn1";
+            this.productquantityDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productquantityDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // Basket_time
+            // 
+            this.Basket_time.DataPropertyName = "Basket_time";
+            this.Basket_time.HeaderText = "Basket_time";
+            this.Basket_time.MinimumWidth = 6;
+            this.Basket_time.Name = "Basket_time";
+            this.Basket_time.ReadOnly = true;
+            this.Basket_time.Width = 125;
             // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1673, 473);
+            this.ClientSize = new System.Drawing.Size(1484, 673);
             this.Controls.Add(this.tabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -1371,6 +1540,13 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.basketBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groop_Project_DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.basketBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1453,33 +1629,13 @@ namespace WindowsFormsApp1
         private ZalDataSet zalDataSet;
         private System.Windows.Forms.BindingSource productBindingSource7;
         private ZalDataSetTableAdapters.ProductTableAdapter productTableAdapter2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Product_quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Product_description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Product_cost;
         private System.Windows.Forms.BindingSource productBindingSource8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridViewBasket;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDProductDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcostDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -1503,12 +1659,6 @@ namespace WindowsFormsApp1
         private Groop_Project_DataSet1 groop_Project_DataSet1;
         private System.Windows.Forms.BindingSource basketBindingSource3;
         private Groop_Project_DataSet1TableAdapters.BasketTableAdapter basketTableAdapter2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDProductDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productcostDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Basket_time;
         private System.Windows.Forms.Button buttonDellBask;
         private System.Windows.Forms.TextBox textBoxQPrINProd;
         private System.Windows.Forms.TextBox textBoxQPrIN;
@@ -1523,6 +1673,39 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product_quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product_description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product_cost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDProductDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productcostDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Basket_time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDProductDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productcostDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productquantityDataGridViewTextBoxColumn;
     }
 }
 

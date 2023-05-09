@@ -22,11 +22,11 @@ namespace WindowsFormsApp1
         public Castomer()
         {
             StartPosition = FormStartPosition.CenterScreen;
-            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.ZalConnectionString"].ConnectionString);
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.DaniilZotin"].ConnectionString);
             sqlConnection.Open();
             if (sqlConnection.State == ConnectionState.Open)
             {
-                //MessageBox.Show("Підключення до БД встановлено!");
+                MessageBox.Show("Підключення до БД встановлено!");
             }
             dBHandler = new DBHandler(sqlConnection);
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {            
-            this.customerTableAdapter.Fill(this.ZalDataSet.Customer);            
+            //this.customerTableAdapter.Fill(this.ZalDataSet.Customer);**************        
         }
         
         //додати нового користувача-----
@@ -199,6 +199,16 @@ namespace WindowsFormsApp1
         {
             
             Close();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,11 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Castomer));
             this.SellingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -56,6 +61,8 @@ namespace WindowsFormsApp1
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customerTableAdapter = new WindowsFormsApp1.ZalDataSetTableAdapters.CustomerTableAdapter();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.productDataGridView2 = new System.Windows.Forms.DataGridView();
             this.iDCustomerDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customernameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +73,10 @@ namespace WindowsFormsApp1
             this.label13 = new System.Windows.Forms.Label();
             this.delButton = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.productDataGridView1 = new System.Windows.Forms.DataGridView();
             this.iDCustomerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customernameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,7 +95,10 @@ namespace WindowsFormsApp1
             this.textBoxPhoneCustUP = new System.Windows.Forms.TextBox();
             this.textBoxSNameCustUP = new System.Windows.Forms.TextBox();
             this.textBoxNameCustUP = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.refreshInsertData = new System.Windows.Forms.Button();
             this.productDataGridView = new System.Windows.Forms.DataGridView();
             this.iDCustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,10 +117,8 @@ namespace WindowsFormsApp1
             this.textBoxSNameCustIN = new System.Windows.Forms.TextBox();
             this.textBoxNameCustIN = new System.Windows.Forms.TextBox();
             this.textBoxIDCastIN = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SellingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zalDataSetBindingSource)).BeginInit();
@@ -129,11 +140,17 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.groopProjectDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -240,23 +257,56 @@ namespace WindowsFormsApp1
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.pictureBox6);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.productDataGridView2);
             this.tabPage3.Controls.Add(this.refreshDelData);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.delButton);
             this.tabPage3.Controls.Add(this.comboBox4);
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1085, 430);
+            this.tabPage3.Size = new System.Drawing.Size(1089, 573);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "DELETE";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.delete;
+            this.pictureBox6.Location = new System.Drawing.Point(1006, 17);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 35;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(810, 399);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(159, 33);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Вихід";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // productDataGridView2
             // 
             this.productDataGridView2.AutoGenerateColumns = false;
+            this.productDataGridView2.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.productDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCustomerDataGridViewTextBoxColumn2,
@@ -265,12 +315,13 @@ namespace WindowsFormsApp1
             this.customerPhoneDataGridViewTextBoxColumn2,
             this.customerPostAdresDataGridViewTextBoxColumn2});
             this.productDataGridView2.DataSource = this.customerBindingSource;
+            this.productDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
             this.productDataGridView2.Location = new System.Drawing.Point(-5, 0);
             this.productDataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView2.Name = "productDataGridView2";
             this.productDataGridView2.ReadOnly = true;
             this.productDataGridView2.RowHeadersWidth = 51;
-            this.productDataGridView2.Size = new System.Drawing.Size(1061, 314);
+            this.productDataGridView2.Size = new System.Drawing.Size(1094, 314);
             this.productDataGridView2.TabIndex = 32;
             // 
             // iDCustomerDataGridViewTextBoxColumn2
@@ -320,10 +371,11 @@ namespace WindowsFormsApp1
             // 
             // refreshDelData
             // 
-            this.refreshDelData.Location = new System.Drawing.Point(583, 340);
+            this.refreshDelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshDelData.Location = new System.Drawing.Point(581, 399);
             this.refreshDelData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshDelData.Name = "refreshDelData";
-            this.refreshDelData.Size = new System.Drawing.Size(100, 28);
+            this.refreshDelData.Size = new System.Drawing.Size(174, 33);
             this.refreshDelData.TabIndex = 32;
             this.refreshDelData.Text = "Оновити";
             this.refreshDelData.UseVisualStyleBackColor = true;
@@ -332,20 +384,22 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(348, 318);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(138, 355);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 16);
+            this.label13.Size = new System.Drawing.Size(167, 25);
             this.label13.TabIndex = 31;
             this.label13.Text = "Код користувача";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // delButton
             // 
-            this.delButton.Location = new System.Drawing.Point(475, 340);
+            this.delButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delButton.Location = new System.Drawing.Point(367, 399);
             this.delButton.Margin = new System.Windows.Forms.Padding(4);
             this.delButton.Name = "delButton";
-            this.delButton.Size = new System.Drawing.Size(100, 28);
+            this.delButton.Size = new System.Drawing.Size(174, 33);
             this.delButton.TabIndex = 30;
             this.delButton.Text = "Видалити";
             this.delButton.UseVisualStyleBackColor = true;
@@ -355,17 +409,28 @@ namespace WindowsFormsApp1
             // 
             this.comboBox4.DataSource = this.customerBindingSource;
             this.comboBox4.DisplayMember = "ID_Customer";
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(321, 340);
+            this.comboBox4.Location = new System.Drawing.Point(130, 399);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(144, 24);
+            this.comboBox4.Size = new System.Drawing.Size(175, 33);
             this.comboBox4.TabIndex = 29;
             this.comboBox4.ValueMember = "ID_Customer";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox3.Location = new System.Drawing.Point(1, -2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1087, 575);
+            this.pictureBox3.TabIndex = 34;
+            this.pictureBox3.TabStop = false;
             // 
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.pictureBox5);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.productDataGridView1);
             this.tabPage2.Controls.Add(this.refreshUpdateData);
@@ -380,18 +445,50 @@ namespace WindowsFormsApp1
             this.tabPage2.Controls.Add(this.textBoxPhoneCustUP);
             this.tabPage2.Controls.Add(this.textBoxSNameCustUP);
             this.tabPage2.Controls.Add(this.textBoxNameCustUP);
+            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1085, 430);
+            this.tabPage2.Size = new System.Drawing.Size(1089, 573);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "UPDATE";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.update;
+            this.pictureBox5.Location = new System.Drawing.Point(1002, 19);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 32;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(654, 468);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 35);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Вихід";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // productDataGridView1
             // 
             this.productDataGridView1.AutoGenerateColumns = false;
+            this.productDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.productDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCustomerDataGridViewTextBoxColumn1,
@@ -400,12 +497,21 @@ namespace WindowsFormsApp1
             this.customerPhoneDataGridViewTextBoxColumn1,
             this.customerPostAdresDataGridViewTextBoxColumn1});
             this.productDataGridView1.DataSource = this.customerBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.productDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
             this.productDataGridView1.Location = new System.Drawing.Point(0, 0);
             this.productDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView1.Name = "productDataGridView1";
             this.productDataGridView1.ReadOnly = true;
             this.productDataGridView1.RowHeadersWidth = 51;
-            this.productDataGridView1.Size = new System.Drawing.Size(1056, 308);
+            this.productDataGridView1.Size = new System.Drawing.Size(1085, 308);
             this.productDataGridView1.TabIndex = 29;
             // 
             // iDCustomerDataGridViewTextBoxColumn1
@@ -420,7 +526,7 @@ namespace WindowsFormsApp1
             // customernameDataGridViewTextBoxColumn1
             // 
             this.customernameDataGridViewTextBoxColumn1.DataPropertyName = "Customer_name";
-            this.customernameDataGridViewTextBoxColumn1.HeaderText = "Ім*я ";
+            this.customernameDataGridViewTextBoxColumn1.HeaderText = "Ім\'я ";
             this.customernameDataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.customernameDataGridViewTextBoxColumn1.Name = "customernameDataGridViewTextBoxColumn1";
             this.customernameDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -447,7 +553,7 @@ namespace WindowsFormsApp1
             // customerPostAdresDataGridViewTextBoxColumn1
             // 
             this.customerPostAdresDataGridViewTextBoxColumn1.DataPropertyName = "Customer_Post_Adres";
-            this.customerPostAdresDataGridViewTextBoxColumn1.HeaderText = "Елктронна пошта";
+            this.customerPostAdresDataGridViewTextBoxColumn1.HeaderText = "Електронна пошта";
             this.customerPostAdresDataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.customerPostAdresDataGridViewTextBoxColumn1.Name = "customerPostAdresDataGridViewTextBoxColumn1";
             this.customerPostAdresDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -455,10 +561,11 @@ namespace WindowsFormsApp1
             // 
             // refreshUpdateData
             // 
-            this.refreshUpdateData.Location = new System.Drawing.Point(887, 351);
+            this.refreshUpdateData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshUpdateData.Location = new System.Drawing.Point(435, 468);
             this.refreshUpdateData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshUpdateData.Name = "refreshUpdateData";
-            this.refreshUpdateData.Size = new System.Drawing.Size(159, 28);
+            this.refreshUpdateData.Size = new System.Drawing.Size(169, 35);
             this.refreshUpdateData.TabIndex = 28;
             this.refreshUpdateData.Text = "Оновити таблицю";
             this.refreshUpdateData.UseVisualStyleBackColor = true;
@@ -467,20 +574,22 @@ namespace WindowsFormsApp1
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(619, 311);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(868, 333);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 16);
+            this.label8.Size = new System.Drawing.Size(189, 25);
             this.label8.TabIndex = 26;
             this.label8.Text = "Електронна пошта";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(448, 311);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(613, 333);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 16);
+            this.label9.Size = new System.Drawing.Size(201, 25);
             this.label9.TabIndex = 25;
             this.label9.Text = "Мобільний телефон";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -488,39 +597,43 @@ namespace WindowsFormsApp1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(308, 311);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(463, 333);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 16);
+            this.label10.Size = new System.Drawing.Size(101, 25);
             this.label10.TabIndex = 24;
             this.label10.Text = "Прізвище";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(161, 311);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(272, 333);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 16);
+            this.label11.Size = new System.Drawing.Size(53, 25);
             this.label11.TabIndex = 23;
             this.label11.Text = "Ім*я";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 311);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(18, 333);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 16);
+            this.label12.Size = new System.Drawing.Size(167, 25);
             this.label12.TabIndex = 22;
             this.label12.Text = "Код користувача";
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(887, 315);
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.Location = new System.Drawing.Point(235, 468);
             this.updateButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(159, 28);
+            this.updateButton.Size = new System.Drawing.Size(164, 35);
             this.updateButton.TabIndex = 21;
             this.updateButton.Text = "Оновити";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -530,49 +643,64 @@ namespace WindowsFormsApp1
             // 
             this.comboBoxCustUP.DataSource = this.customerBindingSource;
             this.comboBoxCustUP.DisplayMember = "ID_Customer";
+            this.comboBoxCustUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCustUP.FormattingEnabled = true;
-            this.comboBoxCustUP.Location = new System.Drawing.Point(4, 334);
+            this.comboBoxCustUP.Location = new System.Drawing.Point(14, 370);
             this.comboBoxCustUP.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCustUP.Name = "comboBoxCustUP";
-            this.comboBoxCustUP.Size = new System.Drawing.Size(144, 24);
+            this.comboBoxCustUP.Size = new System.Drawing.Size(171, 33);
             this.comboBoxCustUP.TabIndex = 20;
             this.comboBoxCustUP.ValueMember = "ID_Customer";
             // 
             // textBoxEMailCustUP
             // 
-            this.textBoxEMailCustUP.Location = new System.Drawing.Point(638, 336);
+            this.textBoxEMailCustUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEMailCustUP.Location = new System.Drawing.Point(873, 373);
             this.textBoxEMailCustUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEMailCustUP.Name = "textBoxEMailCustUP";
-            this.textBoxEMailCustUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEMailCustUP.Size = new System.Drawing.Size(171, 30);
             this.textBoxEMailCustUP.TabIndex = 19;
             // 
             // textBoxPhoneCustUP
             // 
-            this.textBoxPhoneCustUP.Location = new System.Drawing.Point(436, 335);
+            this.textBoxPhoneCustUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPhoneCustUP.Location = new System.Drawing.Point(629, 373);
             this.textBoxPhoneCustUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPhoneCustUP.Name = "textBoxPhoneCustUP";
-            this.textBoxPhoneCustUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPhoneCustUP.Size = new System.Drawing.Size(171, 30);
             this.textBoxPhoneCustUP.TabIndex = 18;
             // 
             // textBoxSNameCustUP
             // 
-            this.textBoxSNameCustUP.Location = new System.Drawing.Point(295, 335);
+            this.textBoxSNameCustUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSNameCustUP.Location = new System.Drawing.Point(423, 373);
             this.textBoxSNameCustUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSNameCustUP.Name = "textBoxSNameCustUP";
-            this.textBoxSNameCustUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSNameCustUP.Size = new System.Drawing.Size(171, 30);
             this.textBoxSNameCustUP.TabIndex = 17;
             // 
             // textBoxNameCustUP
             // 
-            this.textBoxNameCustUP.Location = new System.Drawing.Point(153, 335);
+            this.textBoxNameCustUP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNameCustUP.Location = new System.Drawing.Point(213, 373);
             this.textBoxNameCustUP.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameCustUP.Name = "textBoxNameCustUP";
-            this.textBoxNameCustUP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNameCustUP.Size = new System.Drawing.Size(171, 30);
             this.textBoxNameCustUP.TabIndex = 16;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1087, 575);
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
             // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.pictureBox4);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.refreshInsertData);
             this.tabPage1.Controls.Add(this.productDataGridView);
@@ -587,22 +715,47 @@ namespace WindowsFormsApp1
             this.tabPage1.Controls.Add(this.textBoxSNameCustIN);
             this.tabPage1.Controls.Add(this.textBoxNameCustIN);
             this.tabPage1.Controls.Add(this.textBoxIDCastIN);
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1085, 430);
+            this.tabPage1.Size = new System.Drawing.Size(1089, 573);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "INSERT";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.Insert;
+            this.pictureBox4.Location = new System.Drawing.Point(1018, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(420, 470);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 32);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Вихід";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // refreshInsertData
             // 
-            this.refreshInsertData.Location = new System.Drawing.Point(925, 346);
+            this.refreshInsertData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshInsertData.Location = new System.Drawing.Point(633, 470);
             this.refreshInsertData.Margin = new System.Windows.Forms.Padding(4);
             this.refreshInsertData.Name = "refreshInsertData";
-            this.refreshInsertData.Size = new System.Drawing.Size(100, 28);
+            this.refreshInsertData.Size = new System.Drawing.Size(188, 32);
             this.refreshInsertData.TabIndex = 14;
             this.refreshInsertData.Text = "Оновити";
             this.refreshInsertData.UseVisualStyleBackColor = true;
@@ -611,6 +764,15 @@ namespace WindowsFormsApp1
             // productDataGridView
             // 
             this.productDataGridView.AutoGenerateColumns = false;
+            this.productDataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCustomerDataGridViewTextBoxColumn,
@@ -619,6 +781,15 @@ namespace WindowsFormsApp1
             this.customerPhoneDataGridViewTextBoxColumn,
             this.customerPostAdresDataGridViewTextBoxColumn});
             this.productDataGridView.DataSource = this.customerBindingSource;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            this.productDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
             this.productDataGridView.Location = new System.Drawing.Point(-8, 0);
             this.productDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.productDataGridView.Name = "productDataGridView";
@@ -631,7 +802,7 @@ namespace WindowsFormsApp1
             // iDCustomerDataGridViewTextBoxColumn
             // 
             this.iDCustomerDataGridViewTextBoxColumn.DataPropertyName = "ID_Customer";
-            this.iDCustomerDataGridViewTextBoxColumn.HeaderText = "ІД користувача";
+            this.iDCustomerDataGridViewTextBoxColumn.HeaderText = "Код користувача";
             this.iDCustomerDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDCustomerDataGridViewTextBoxColumn.Name = "iDCustomerDataGridViewTextBoxColumn";
             this.iDCustomerDataGridViewTextBoxColumn.ReadOnly = true;
@@ -640,7 +811,7 @@ namespace WindowsFormsApp1
             // customernameDataGridViewTextBoxColumn
             // 
             this.customernameDataGridViewTextBoxColumn.DataPropertyName = "Customer_name";
-            this.customernameDataGridViewTextBoxColumn.HeaderText = "Ім*я";
+            this.customernameDataGridViewTextBoxColumn.HeaderText = "Ім\'я";
             this.customernameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.customernameDataGridViewTextBoxColumn.Name = "customernameDataGridViewTextBoxColumn";
             this.customernameDataGridViewTextBoxColumn.ReadOnly = true;
@@ -676,59 +847,66 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(663, 310);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(847, 325);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 16);
+            this.label5.Size = new System.Drawing.Size(189, 25);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Елктронна пошта";
+            this.label5.Text = "Елeктронна пошта";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(496, 310);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(678, 325);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 16);
+            this.label4.Size = new System.Drawing.Size(99, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Телефон";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(344, 307);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(456, 325);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 9;
             this.label3.Text = "Прізвище";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(200, 308);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(274, 325);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 16);
+            this.label2.Size = new System.Drawing.Size(53, 25);
             this.label2.TabIndex = 8;
             this.label2.Text = "Ім*я";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 306);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 325);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 16);
+            this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Код користувача";
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(925, 310);
+            this.insertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertButton.Location = new System.Drawing.Point(191, 470);
             this.insertButton.Margin = new System.Windows.Forms.Padding(4);
             this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(100, 28);
+            this.insertButton.Size = new System.Drawing.Size(191, 32);
             this.insertButton.TabIndex = 6;
             this.insertButton.Text = "Вставити";
             this.insertButton.UseVisualStyleBackColor = true;
@@ -736,44 +914,58 @@ namespace WindowsFormsApp1
             // 
             // textBoxEMailCustIN
             // 
-            this.textBoxEMailCustIN.Location = new System.Drawing.Point(655, 332);
+            this.textBoxEMailCustIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEMailCustIN.Location = new System.Drawing.Point(848, 364);
             this.textBoxEMailCustIN.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEMailCustIN.Name = "textBoxEMailCustIN";
-            this.textBoxEMailCustIN.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEMailCustIN.Size = new System.Drawing.Size(188, 30);
             this.textBoxEMailCustIN.TabIndex = 4;
             // 
             // textBoxPhoneCustIN
             // 
-            this.textBoxPhoneCustIN.Location = new System.Drawing.Point(499, 330);
+            this.textBoxPhoneCustIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPhoneCustIN.Location = new System.Drawing.Point(633, 364);
             this.textBoxPhoneCustIN.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPhoneCustIN.Name = "textBoxPhoneCustIN";
-            this.textBoxPhoneCustIN.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPhoneCustIN.Size = new System.Drawing.Size(180, 30);
             this.textBoxPhoneCustIN.TabIndex = 3;
             // 
             // textBoxSNameCustIN
             // 
-            this.textBoxSNameCustIN.Location = new System.Drawing.Point(342, 330);
+            this.textBoxSNameCustIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSNameCustIN.Location = new System.Drawing.Point(409, 364);
             this.textBoxSNameCustIN.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSNameCustIN.Name = "textBoxSNameCustIN";
-            this.textBoxSNameCustIN.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSNameCustIN.Size = new System.Drawing.Size(188, 30);
             this.textBoxSNameCustIN.TabIndex = 2;
             // 
             // textBoxNameCustIN
             // 
-            this.textBoxNameCustIN.Location = new System.Drawing.Point(187, 332);
+            this.textBoxNameCustIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNameCustIN.Location = new System.Drawing.Point(220, 364);
             this.textBoxNameCustIN.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameCustIN.Name = "textBoxNameCustIN";
-            this.textBoxNameCustIN.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNameCustIN.Size = new System.Drawing.Size(161, 30);
             this.textBoxNameCustIN.TabIndex = 1;
             // 
             // textBoxIDCastIN
             // 
-            this.textBoxIDCastIN.Location = new System.Drawing.Point(16, 330);
+            this.textBoxIDCastIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIDCastIN.Location = new System.Drawing.Point(27, 364);
             this.textBoxIDCastIN.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxIDCastIN.Name = "textBoxIDCastIN";
-            this.textBoxIDCastIN.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIDCastIN.Size = new System.Drawing.Size(171, 30);
             this.textBoxIDCastIN.TabIndex = 0;
             this.textBoxIDCastIN.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(133)))), ((int)(((byte)(202)))));
+            this.pictureBox1.Location = new System.Drawing.Point(-8, -18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1089, 588);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // tabControl1
             // 
@@ -785,49 +977,19 @@ namespace WindowsFormsApp1
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1093, 459);
+            this.tabControl1.Size = new System.Drawing.Size(1097, 602);
             this.tabControl1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(813, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Вихід";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(760, 375);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Вихід";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(735, 345);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Вихід";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Castomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 459);
+            this.ClientSize = new System.Drawing.Size(1097, 602);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Castomer";
-            this.Text = "ShopDB";
+            this.Text = "Gym";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SellingBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
@@ -851,13 +1013,19 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -938,6 +1106,17 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox textBoxNameCustIN;
         private System.Windows.Forms.TextBox textBoxIDCastIN;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCustomerDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customernameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customersurnameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerPostAdresDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCustomerDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn customernameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn customersurnameDataGridViewTextBoxColumn1;
@@ -948,14 +1127,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridViewTextBoxColumn customersurnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerPostAdresDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCustomerDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customernameDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customersurnameDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerPostAdresDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
 

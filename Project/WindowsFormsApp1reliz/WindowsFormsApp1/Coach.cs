@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         public Coach()
         {
             StartPosition = FormStartPosition.CenterScreen;
-            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.ZalConnectionString"].ConnectionString);
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.DaniilZotin"].ConnectionString);
             sqlConnection.Open();
             if (sqlConnection.State == ConnectionState.Open)
             {
